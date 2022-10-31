@@ -1,0 +1,25 @@
+.card{
+  padding: 20px 10px 20px 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+  background-color: azure;
+}
+.cardText{
+  font-family: 'DM Sans';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.cardDescription{
+  font-family: 'DM Sans';
+  text-decoration: none;
+}
+.cardImage{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}

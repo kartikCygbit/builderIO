@@ -1,0 +1,42 @@
+.headerContainer{
+  background-color: blueviolet;
+  /* height: 50px; */
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /* max-width: 640px; */
+}
+.headerImg{
+  height: 20px;
+  width: 65px;
+  background-color: gray;
+  object-fit: contain;
+}
+.headerBtn{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 0px 20px;
+  height: 32px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.headerBtn:hover{
+  cursor: pointer;
+}
+.headerBtnText{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}

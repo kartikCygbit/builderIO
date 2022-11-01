@@ -1,0 +1,19 @@
+.featuresContainer{
+  padding: 70px 0px 70px 0px;
+}
+.textContainer{
+  padding: 0px 20px 0px 20px;
+}
+.title{
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 14px 0px 14px 0px;
+}
+.description{
+  color: #475569;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}

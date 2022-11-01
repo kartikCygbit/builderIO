@@ -1,0 +1,44 @@
+.card{
+  /* background-color: cadetblue; */
+  display: flex;
+  flex-direction: row;
+  padding: 0px 20px 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.reverse{
+  flex-direction: row-reverse;
+}
+.descContainer{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.checkImage{
+  height: 18px;
+  width: 25px;
+  object-fit: contain;
+}
+.cardDescription{
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+}
+.cardImage{
+  height: 100%;
+  width: 40%;
+  object-fit: contain;
+  background-color: gray;
+}
+.mr15{
+  margin-right: 15px;
+}
+.ml15{
+  margin-left: 15px;
+}

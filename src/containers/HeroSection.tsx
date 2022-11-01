@@ -1,30 +1,29 @@
 import { BuilderComponent, builder} from '@builder.io/react';
 import { useEffect, useState } from "react";
-import './styles/SampleStyles.css'
 import '@builder.io/widgets';
 
-function Sample() {
-  const [sample, setSample] = useState(null);
+function HeroSection() {
+  const [hero, setHero] = useState(null);
 
   useEffect(() => {
     builder
-      .get("landing", {
+      .get("hero", {
         userAttributes: {
           // To allow targeting different announcements at different pages (URLs)
           urlPath: window.location.pathname,
         },
       })
       .toPromise()
-      .then((heroComp) => setSample(heroComp));
-  }, [window.location.pathname]);
+      .then((heroComp) => setHero(heroComp));
+  }, []);
 
   return (
-    <div className='cardSection'>
-      {sample && (
-        <BuilderComponent model="landing" content={sample} />
+    <div>
+      {hero && (
+        <BuilderComponent model="hero" content={hero} />
       )}
     </div>
   );
 }
 
-export default Sample;
+export default HeroSection;

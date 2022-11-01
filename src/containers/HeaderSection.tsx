@@ -1,30 +1,30 @@
 import { BuilderComponent, builder} from '@builder.io/react';
 import { useEffect, useState } from "react";
-import './styles/SampleStyles.css'
+// import './styles/HeaderStyles.css'
 import '@builder.io/widgets';
 
-function Sample() {
-  const [sample, setSample] = useState(null);
+function HeaderSection() {
+  const [header, setHeader] = useState(null);
 
   useEffect(() => {
     builder
-      .get("landing", {
+      .get("header", {
         userAttributes: {
           // To allow targeting different announcements at different pages (URLs)
           urlPath: window.location.pathname,
         },
       })
       .toPromise()
-      .then((heroComp) => setSample(heroComp));
-  }, [window.location.pathname]);
+      .then((headerComp) => setHeader(headerComp));
+  }, []);
 
   return (
-    <div className='cardSection'>
-      {sample && (
-        <BuilderComponent model="landing" content={sample} />
+    <div>
+      {header && (
+        <BuilderComponent model="header" content={header} />
       )}
     </div>
   );
 }
 
-export default Sample;
+export default HeaderSection;
